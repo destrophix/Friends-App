@@ -1,0 +1,12 @@
+<div><%= @friend.first_name %></div>
+<div><%= @friend.last_name %></div>
+<div><%= @friend.email %></div>
+<div><%= @friend.phone %></div>
+<div><%= @friend.twitter %></div>
+
+<div>
+  <%= link_to "Edit this friend", edit_friend_path(@friend) %> |
+  <%= link_to "Back to friends", friends_path %>
+
+  <%= button_to "Destroy this friend", @friend, method: :delete %>
+</div>
